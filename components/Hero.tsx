@@ -43,8 +43,8 @@ const Hero: React.FC = () => {
                    Get In Touch
                  </a>
                  <a
-                   href="/ArjunGS Resume.pdf"
-                   download="ArjunGS_Resume.pdf"
+                   href="/Arjun_GS_Resume.pdf"
+                   download="Arjun_GS_Resume.pdf"
                    className="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-lg transition-all flex items-center justify-center gap-2"
                  >
                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

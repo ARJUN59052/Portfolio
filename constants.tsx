@@ -3,16 +3,20 @@ import { SkillCategory, Project, Experience, Certificate } from './types';
 
 export const SKILLS: SkillCategory[] = [
   {
-    title: 'Programming',
+    title: 'Programming Languages',
     items: ['Python', 'C++', 'C'],
   },
   {
-    title: 'Tools & Technologies',
-    items: ['Git', 'GitHub', 'Computer Networking', 'Adobe Photoshop', 'MS Office'],
+    title: 'Embedded & AI Systems',
+    items: ['Machine Learning', 'Edge AI', 'Data Science', 'Cyber Security', 'Computer Networking', 'IoT'],
   },
   {
-    title: 'Specializations',
-    items: ['Cyber Security', 'Machine Learning', 'NLP'],
+    title: 'Full-Stack Web Tech',
+    items: ['React', 'TypeScript', 'Vite', 'Supabase', 'API Integration', 'Tailwind CSS', 'Node.js'],
+  },
+  {
+    title: 'Tools',
+    items: ['Git', 'GitHub', 'Adobe Photoshop', 'MS Office'],
   },
 ];
 
@@ -26,11 +30,27 @@ export const PROJECTS: Project[] = [
     demo: '',
   },
   {
-    title: 'Electronic Nose for Seafood Freshness',
-    description: 'Developing a Machine Learning system to evaluate seafood freshness by analyzing volatile gas sensor data. Performing data preprocessing, feature extraction, and model training. Demonstrates the use of sensor-based intelligent systems for food quality monitoring applications.',
+    title: 'Electronic Nose for Evaluating Seafood Freshness Using Machine Learning',
+    description: 'Designed and built an electronic nose system that processes volatile gas sensor array data to automate seafood freshness evaluation. Applied machine learning classification algorithms to extract key features from sensors and predict precise quality levels. Utilized Python and specialized data science libraries to execute data preprocessing and performance validation.',
     tags: ['Machine Learning', 'Sensors', 'Python', 'Data Science'],
-    status: 'Ongoing',
+    status: 'Completed',
     image: '/projects/electronic_nose.jpg',
+    repo: 'https://github.com/ARJUN59052',
+    demo: '',
+  },
+  {
+    title: 'Water Monitoring System',
+    description: 'Designed and developed an interactive dashboard to monitor real-time sensor metrics and track environmental data. Implemented core application logic and workflows to visualize critical data metrics efficiently. Utilized React, TypeScript, and Vite for building the web application framework, integrated with the Gemini API.',
+    tags: ['React', 'TypeScript', 'Vite', 'Gemini API', 'Sensors'],
+    image: '/projects/water_monitoring.jpg',
+    repo: 'https://github.com/ARJUN59052',
+    demo: '',
+  },
+  {
+    title: 'Online Fingerprint Voting System',
+    description: 'Designed an online voting system with fingerprint authentication to ensure election security and prevent duplicate votes. Built interactive dashboards for real-time poll creation, candidate management, and live election results tracking. Developed the application using React and TypeScript on the frontend, integrated with Supabase for backend storage and database logic.',
+    tags: ['React', 'TypeScript', 'Supabase', 'Authentication'],
+    image: '/projects/voting_system.jpg',
     repo: 'https://github.com/ARJUN59052',
     demo: '',
   },
@@ -38,15 +58,23 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
+    role: 'AI Engineer Intern',
+    company: 'Sortyx Venture Pvt, Chennai',
+    period: 'Internship',
+    highlights: [
+      'Developed full-stack features, web dashboards, and automation workflows to process real-time sensor data and track systems.',
+      'Integrated embedded hardware with machine learning by deploying edge AI models and configuring I2C communication protocols for microcontrollers.',
+      'Utilized embedded computer vision, cloud-connected microcontrollers, and full-stack web technologies to build tracking systems.',
+    ],
+  },
+  {
     role: 'Cyber Security Intern',
     company: 'Retech Solution Pvt, Chennai',
     period: 'Internship',
     highlights: [
-      'Completed Cyber Security internship with hands-on exposure to fundamental security concepts and threat analysis.',
-      'Gained practical experience in image analysis and digital evidence detailing for basic cyber investigations.',
-      'Learned map reading and geolocation fundamentals to support situational awareness and cyber intelligence tasks.',
-      'Studied common cyber attacks and security mechanisms, including basic prevention and system protection techniques.',
-      'Developed foundational understanding of security systems, vulnerabilities, and safe computing practices.',
+      'Identified and mitigated system vulnerabilities by executing hands-on threat analysis and risk assessments.',
+      'Conducted digital forensics, image analysis, and geolocation mapping to extract evidence for investigations.',
+      'Utilized specialized cybersecurity frameworks and cryptographic tools to implement robust system protection mechanisms.',
     ],
   },
 ];
@@ -60,7 +88,7 @@ export const EDUCATION = {
 export const CERTIFICATES: Certificate[] = [
   { name: 'Cyber Security Basics', issuer: 'Guvi' },
   { name: 'Mastering Black Hat Techniques: Guide to Hacking & Cyber Security', issuer: 'Udemy' },
-  { name: 'ADCP - C, C++, Python', issuer: 'Cadd Cae Campus' },
+  { name: 'ADCP - C, C++, Python', issuer: 'Cadd Cae Computers' },
 ];
 export const SOCIAL_LINKS = {
   github: 'https://github.com/ARJUN59052',
